@@ -4,5 +4,5 @@ RUN useradd murthy
 LABEL  "Name"="Murthy" \
        "SurName"="Ch" \
        "Qual"="MTech" 
-EXPOSE 80/tcp
+EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
