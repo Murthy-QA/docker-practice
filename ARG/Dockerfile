@@ -1,10 +1,10 @@
 ARG version
 FROM almalinux:${version:-9}
-ARG "Module"="Docker" \
-    "Concept"="Docker Architecture" \
-    "Command"="ARG"
+ARG "module"="Docker" \
+    "concept"="Docker Architecture" \
+    "command"="ARG"
 LABEL "Module"="Docker" \
       "Concept"="Docker Architecture" \
       "Command"="ARG"
-RUN echo "Module is: ${Module},concept is: ${Concept}, Command is: ${Command}"
+RUN echo "Module is: ${module},concept is: ${concept}, Command is: ${command}"
 CMD ["sleep","infinity"]
